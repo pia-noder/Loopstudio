@@ -183,6 +183,9 @@ section{
     }
 
 /*Section Games*/
+.section-games{
+    margin: 0 163px;
+}
 .seeAllBtn{
     width: 157px;
     height: 40px;
@@ -196,11 +199,39 @@ section{
     background-color: #000;
     color: #fff;
 }
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
 article{
     width: 256px;
     height: auto;
     margin: auto;
     position: relative;
+    cursor: pointer;
+}
+picture{
+    transition: 0.5s linear;/*définir la vitesse de changement d'opacité*/
+}
+.overlay{
+    transition: 0.5s ease;
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.title-game{
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 32px;
+    font-size: clamp(24px, calc(32 * var(--res)), 32px);
+    transition: 0.5s linear;
+}
+article:hover picture{
+    opacity: 0.3;
+}
+article:hover .title-game{
+    color:#000;
 }
 @media screen and (max-width:750px){
     
