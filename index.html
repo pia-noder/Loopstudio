@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div id="header-content" class="header-content">
+      <nav>
+
+        <div class="logo-wrap">
+          <img src="./images/logo.svg" alt="Logo de Loopstudio; logo textuel">
+          <div id='header-toggleBtn' class="header-toggleBtn">
+            <div class="toggleLign"></div>
+          </div>
+        </div>
+
+        <ul id="menu" class="menu">
+          <li id="item" class="item">
+            <a class='link-text' href="#">About</a>
+          </li>
+          <li  class="item">
+            <a class='link-text' href="#">Careers</a>
+          </li>
+          <li  class="item">
+            <a class='link-text' href="#">Events</a>
+          </li>
+          <li  class="item">
+            <a class='link-text' href="#">Products</a>
+          </li>
+          <li  class="item">
+            <a class='link-text' href="#">Support</a>
+          </li>
+        </ul>
+
+    
+      </nav>
+      <div id="header-catchSentence" class="header-catchSentence">
+        IMMERSIVE EXPERIENCES THAT DELIVER
+      </div>
+
+      <div id="mobile-menu" class="mobile-menu">
+        <ul  class="mobile-menuList">
+          <li class="mobile-item">
+            <a class='mobile-link' href="#">About</a>
+          </li>
+          <li  class="mobile-item">
+            <a class='mobile-link' href="#">Careers</a>
+          </li>
+          <li  class="mobile-item">
+            <a class='mobile-link' href="#">Events</a>
+          </li>
+          <li  class="mobile-item">
+            <a class='mobile-link' href="#">Products</a>
+          </li>
+          <li  class="mobile-item">
+            <a class='mobile-link' href="#">Support</a>
+          </li>
+        </ul>
+      </div>
+     
+    </div>
+  </header>
+  <section id="section-hero">
+    <div class="hero">
+      <img class="img-interactive" src="./images/desktop/image-interactive.jpg" alt="Un homme portant un casque pour la VR">
+      <div class="hero-text">
+        <h2>THE LEADER IN INTERACTIVE VR</h2>
+        <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+          projects for some of the best companies around the globe. Our award-winning 
+          creations have transformed businesses through digital experiences that bind 
+          to their brand.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-games">
+    <header-games>
+      <h2>OUR CREATIONS</h2>
+    </header-games>
+    <div class="gallery">
+      <article class="game1">
+        <picture>
+          <source media="(max-width: 600px)" srcset="./images/mobile/image-deep-earth.jpg">
+          <img src="./images/desktop/image-deep-earth.jpg" >
+        </picture>
+        <div class="overlay">
+          <div class="title-game">DEEP EARTH</div>
+        </div>
+      </article>
+    </div>
+    <button class="seeAllBtn">SEE ALL</button>
+  </section>
+  
+  
+
+  Night arcade
+  Soccer team VR
+  The grid
+  From up above VR
+  Pocket borealis
+  The curiosity
+  Make it fisheye
+
+  <footer>
+
+  </footer>
+  About
+  Careers
+  Events
+  Products
+  Support
+
+  © 2021 Loopstudios. All rights reserved.
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./Toggle.js"></script>
+</body>
+</html>
