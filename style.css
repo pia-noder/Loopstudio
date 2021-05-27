@@ -183,8 +183,10 @@ section{
     }
 
 /*Section Games*/
-.section-games{
-    margin: 0 163px;
+#section-games{
+    padding: 0 165px 0;
+    margin: auto;
+    margin-top: 184px;
 }
 .seeAllBtn{
     width: 157px;
@@ -202,11 +204,14 @@ section{
 .gallery{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 article{
+    
     width: 256px;
     height: auto;
     margin: auto;
+    margin-top: 30px;
     position: relative;
     cursor: pointer;
 }
