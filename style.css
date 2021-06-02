@@ -18,7 +18,9 @@ h2{
     font-size: clamp(32px, calc(48 * var(--res)), 48px);
     font-weight: lighter;
 }
-
+img{
+    display: block;
+}
 /*Header*/
 
 header{
@@ -29,7 +31,7 @@ header{
 }
 .header-content{
     padding: 0 165px 0;
-    margin: auto;
+    margin-inline: auto;
     
 }
 nav{
@@ -76,27 +78,29 @@ li{
 
 .header-catchSentence{
     width: 58.7%;
+    height: 280px;
 
     margin-top: 123px;
     padding: 40px 40px 25px 39px;
 
+    border: 2px solid #fff;
+}
+.header-catchSentence p {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: clamp(40px, calc(79 * var(--res)) , 5.5em);
+    font-size: clamp(40px, calc(79 * var(--res)) , 4.8em);
     /*font-size: 4.8em;*/
     color: #fff;
     line-height: 70px;
-
-    border: 2px solid #fff;
+ 
 }
-
 
 /*Section Hero*/
 section{
-    margin-top: 160px;
+    margin-top: 5vh;
+    
 }
 .hero{
-    padding: 0 calc(172 * var(--res)) 0;
-    margin: auto;
+    padding:  0 163px 0;
 
     display: grid;
     grid-template-columns: 3.2fr 1fr 2fr;
@@ -117,12 +121,12 @@ section{
 }
 .hero-text h2{
     text-align: center;
-    font-size: 3.1em;
+    font-size: clamp(2rem, calc(48 * var(--res)), 3rem);
     letter-spacing: 1.5px;
     padding-left: 40px;
 }
 .txt-interactive{
-    margin-top: 25px;
+    margin-top: 27px;
     width: 83%;
     font-family: 'Alata', sans-serif;
     line-height: 25px;
@@ -132,7 +136,7 @@ section{
     transform: translateX(-250%);
     background-size: contain;
     background: black;
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     margin-top: 200px;
 }
@@ -202,12 +206,20 @@ section{
         transform: rotate(-45deg);
         transition: bottom 300ms ease, transform 300ms 300ms ease;
     }
+    #header-catchSentence.is-active{
+        display: none;
+    }
 
 /*Section Games*/
 #section-games{
-    padding: 0 calc(165 * var(--res)) 0;
-    margin: auto;
-    margin-top: 184px;
+    margin-top: 183px;
+}
+.games{
+    padding:  0 163px 0;
+
+}
+.header-games{
+    font-size: clamp(2rem, calc(150 * var(--res)) , 5rem);
 }
 .seeAllBtn{
     width: 157px;
@@ -226,12 +238,14 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 50px;
 }
 article{
     
     width: 256px;
     height: auto;
-    margin-top: 30px;
+
+    margin-top: 28px;
     position: relative;
     cursor: pointer;
 }
@@ -258,6 +272,31 @@ article:hover picture{
 article:hover .title-game{
     color:#000;
 }
+@media screen and (max-width: 900px){
+    .hero{
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px;
+        width: 100%;
+    }
+    .hero img {
+        max-width: 90%;
+        margin: auto;
+    }
+    .hero-text{
+        margin-top: 5vh;
+        align-items: center;
+    }
+    .hero-text h2 {
+        padding: 0;
+    }
+}
+@media screen and (max-width:900px){
+    .games{
+        padding: 0 calc(100 * var(--res)) 0;  
+    }
+}
+
 @media screen and (max-width:750px){
     
     nav{
@@ -297,26 +336,46 @@ article:hover .title-game{
     .mobile-item > .mobile-link{
         font-family: 'Josefin Sans', sans-serif;
     }
-    .hero{
-        display: flex;
-        flex-direction: column;
-        padding: 0 24px;
+    .hero {
+        padding: 0 0 0;
     }
     #section-games{
-        padding: 0 24px 0;
+        padding: 0 0 0;
+        margin-top: 96px;
+    }
+    .games{
+        padding: 0 0 0;
+
+    }
+    .header-games{
+        text-align: center;
     }
     .gallery{
-        justify-content: center;
+        width: 90%;
+        margin-inline: auto;
+        flex-direction: column;
     }
     article{
-        width: 320px;
+        min-width: 280px;   
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    picture{
+        display: block;
+        width: 100%;
+        margin: auto;
     }
     picture source{
-        width: 300px;
+        min-width: 300px;
+        max-width: 640px;
         height: auto;
     }
     picture img{
-        width: 310px;
+        min-width: 290px;
+        max-width: 640px;
+        width: 100%;
         height: auto;
+
     }
 }
